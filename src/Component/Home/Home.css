@@ -1,13 +1,13 @@
 .body{
+    background-color: #F3F3F3;
     width: 1280px;
     padding: 20px;
+}
+.main-body{
     display: flex;
-    justify-content: space-between;
-    
+    gap:10px   
 }
 .course-title{
-    width: 1280px;
-   
     font-size: 32px;
     font-weight: 700;
     display: flex;
@@ -17,9 +17,11 @@
     width: 300px;
     height: 390px;
     border: 1px solid gray;
+    border: none;
     border-radius: 10px;
     padding: 5px;
     text-align: center;
+    background-color: white;
     
 }
 .card-img{
@@ -40,14 +42,20 @@
     color: white;
 }
 .cart{
-   width: 100px;
+    border: 1px solid gray;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    width: auto;
     text-align: center;
     align-items: center;
+    padding: 10px;
+    width: 300px;
 }
 .card-container{
     width: 1100px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     
 }
