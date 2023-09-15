@@ -6,12 +6,12 @@ const Cart = ({selectCourse, totalCredit, remainingCredit, totalPrice}) => {
         <div>
             <h3 className='cart-title'>Credit Hour Remaining {remainingCredit}hr</h3>
             <hr />
-            <h4 className='course-title'>Course Name</h4>
+            <h3 className='cart-course-title'>Course Name</h3>
             {
                 selectCourse.map((course =>(
              <div key={course.id}>
 
-           <li>{course.id + 1}. {course.title}</li> 
+           <li>{course.title}</li> 
              </div>
                 )))
             }

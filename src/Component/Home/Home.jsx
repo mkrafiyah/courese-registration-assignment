@@ -3,7 +3,9 @@ import { useEffect, useState } from 'react';
 import './Home.css'
 import Cart from '../Cart/Cart';
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
+import { FaBookOpen } from 'react-icons/fa';
+import { FaDollarSign } from 'react-icons/fa';
 
 const Home = () => {
     const [allData, setAllData] = useState([]);
@@ -32,7 +34,7 @@ const Home = () => {
             })
             const remainingCredit = givenCredit - creditHour;
             if(creditHour > 20){
-                toast("Wow so easy!");
+                toast("you reached the limit of credit!");
             }else{
                 setTotalCredit(creditHour);
                 setRemainingCredit(remainingCredit);
@@ -52,11 +54,21 @@ const Home = () => {
            {allData.map((card=>(
              <div key={card.id} className="card-body">
              <img className='card-img' src={card.image} alt="" />
-              <h3>{card.title}</h3>
-              <p>{card.description}</p>
+              <h3 className='card-title'>{card.title}</h3>
+              <p  className='description'>{card.description}</p>
               <div className='card-info'>
-                  <p>Price : {card.price}</p>
-                  <p>Credit : {card.credit}hr</p>
+                <div className='dollar-icon'>
+                    
+                <p><FaDollarSign></FaDollarSign></p>
+                <p className='price-credit-card'>Price : {card.price}</p>
+                </div>
+                  
+                  
+                  <div className='bookmark-icon'>
+                    <p><FaBookOpen></FaBookOpen></p>
+                  <p className='price-credit-card'> Credit : {card.credit}hr</p>
+                  </div>
+                  
               </div>
               <button onClick={()=> handleSelectCourse(card)} className='card-btn' type="button">Select</button>
               

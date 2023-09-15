@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 .body{
     background-color: #F3F3F3;
     width: 1280px;
     padding: 20px;
+    font-family: 'Inter', sans-serif;
 }
 .main-body{
     display: flex;
@@ -14,32 +16,51 @@
     justify-content: center;
 }
 .card-body{
-    width: 300px;
-    height: 390px;
+    width: 310px;
+    height: 430px;
     border: 1px solid gray;
     border: none;
     border-radius: 10px;
     padding: 5px;
-    text-align: center;
     background-color: white;
     
 }
+.card-title{
+    color: #1C1B1B;
+    font-weight: 600;
+    padding-left: 10px;
+
+}
+.description{
+    font-weight: 400;
+    color: #1c1b1bcc;
+    padding-left: 10px;
+}
+.price-credit-card{
+   color: #1c1b1b99;
+   font-weight: 500;
+}
 .card-img{
     width: 100%;
+    
 }
 .card-info{
     display: flex;
     justify-content: space-evenly;
+    font-weight: 500;
 }
 .card-btn{
     padding: 10px ;
     border: none;
     border-radius: 5px;
     width: 90%;
-    font-size: 16px;
-    font-weight: medium;
+    font-size: 18px;
+    font-weight: 600;
     background-color: #2F80ED;
     color: white;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    
 }
 .cart{
     border: 1px solid gray;
@@ -54,6 +75,16 @@
     width: 1100px;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
     
+}
+.dollar-icon{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.bookmark-icon{
+    display: flex;
+    align-items: center;
+    gap: 2px;
 }
