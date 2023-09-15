@@ -1,0 +1,21 @@
+li{
+    list-style: none;
+    text-align: left;
+}
+.cart-title{
+    color: #2F80ED;
+    text-align: left;
+}
+.course-title{
+    text-align: left;
+}
+.credit-info{
+    color: #1c1b1bcc;
+    font-size: 14px;
+    font-weight: bold;
+}
+.price-info{
+    color: #1c1b1bcc;
+    font-size: 14px;
+    font-weight: bold;
+}
