@@ -11,7 +11,7 @@ const Home = () => {
     const [allData, setAllData] = useState([]);
     const [selectCourse, setSelectCourse] = useState([]);
     const [totalCredit, setTotalCredit] = useState(0);
-    const [remainingCredit, setRemainingCredit] = useState(0);
+    const [remainingCredit, setRemainingCredit] = useState(20);
     const [totalPrice, setTotalPrice] = useState(0);
     useEffect(()=>{
         fetch('./data.json')
@@ -25,7 +25,7 @@ const Home = () => {
         let price = card.price;
         
         if(isExists){
-           return alert('already taken')
+           return toast("Already taken");
         }else{
             selectCourse.forEach((hour) =>{
                 price = price + hour.price
