@@ -1,13 +1,13 @@
 1.Question: Add at least three project features.
 
 Answer: Project features are given below:
-*Users can pick any course by clicking on the select button.Selected course title will be showed in the right side cart.
+* Users can pick any course by clicking on the select button.Selected course title will be showed in the right side cart.
 
-*After selecting the courses total credit hour and price  will be showed in the "Total Credit Hour" and "Total price" section.
+* After selecting the courses total credit hour and price  will be showed in the "Total Credit Hour" and "Total price" section.
 
-*Total credit hour cannot be more than 20hr.If users reached this limit,a toast message wil be shown on the screen.
+* Total credit hour cannot be more than 20hr.If users reached this limit,a toast message wil be shown on the screen.
 
-*Users can choose one course only once.If he/she tries to pick twice the same course a toast message will popup.
+* Users can choose one course only once.If he/she tries to pick twice the same course a toast message will popup.
 
 
 
