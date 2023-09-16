@@ -7,14 +7,15 @@ const Cart = ({selectCourse, totalCredit, remainingCredit, totalPrice}) => {
             <h3 className='cart-title'>Credit Hour Remaining {remainingCredit}hr</h3>
             <hr />
             <h3 className='cart-course-title'>Course Name</h3>
-            {
+            
+            <ol>{
                 selectCourse.map((course =>(
              <div key={course.id}>
 
            <li>{course.title}</li> 
              </div>
                 )))
-            }
+            } </ol>
             <hr />
              <p className='credit-info'>Total Credit Hour:{totalCredit}hr</p>
             <hr />

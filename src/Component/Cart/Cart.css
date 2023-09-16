@@ -19,3 +19,8 @@ li{
     font-size: 14px;
     font-weight: bold;
 }
+li{
+    list-style: decimal;
+    color: #1c1b1bcc;
+    font-weight: 400;
+}
